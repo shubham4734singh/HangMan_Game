@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    color: #fff; /* White text for better contrast */
+}
+
+/* Header Styles */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+/* Game Stage */
+.stage {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Word Display */
+.display {
+    font-size: 32px;
+    letter-spacing: 5px;
+    margin: 20px 0;
+}
+
+/* Lives Remaining */
+.lives {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Forms */
+form {
+    margin: 15px 0;
+}
+
+/* Input Fields */
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 200px;
+    font-size: 1rem;
+}
+
+/* Buttons */
+button {
+    background-color: #fff; /* White background for buttons */
+    color: #ff7e5f; /* Button text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    margin-left: 5px; /* Space between input and button */
+}
+
+/* Hover Effects for Buttons */
+button:hover {
+    background-color: #ff7e5f; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Feedback */
+.feedback {
+    font-size: 20px;
+    color: #90ee90; /* Light green color for feedback */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .display {
+        font-size: 24px;
+    }
+
+    button {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
